@@ -7,13 +7,27 @@ body {
     padding: 0;
     margin: 0;
     font-family: myFont;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .header {
     padding: 30px 0;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: white;
     justify-content: space-between;
 }
 
@@ -30,7 +44,7 @@ li {
     margin-top: 13px;
 }
 
-li:hover {
+li:hover a {
     color: blue;
     cursor: pointer;
 }
@@ -39,6 +53,7 @@ li:hover {
     width: 90%;
     height: 650px;
     margin: 0 auto;
+    margin-top: 100px;
     background-image: url("./assets/Group\ 75.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -160,4 +175,171 @@ li:hover {
 
 .card-subtitle {
     color: grey;
+}
+
+.video {
+    width: 90%;
+    height: 500px;
+    background: url("./assets/Great\ Since.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.video-text {
+    width: 50%;
+    height: 500px;
+}
+
+.video-text h2 {
+    margin-top: 150px;
+}
+.iframe {
+    width: 50%;
+    height: 500px;
+}
+
+.iframe iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 70px;
+    box-shadow: 0 3px 10px rgba(152, 152, 152, 0.2);
+}
+
+.feedback {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.feedback-top {
+    text-align: center;
+}
+
+.feedback-subtitle {
+    color: grey;
+}
+
+.feedback-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: url("./assets/Group\ 77.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feedback-left {
+    width: 33%;
+    height: 100%;
+}
+
+.feedback-center {
+    width: 33%;
+    height: 100%;
+}
+
+.feedback-center h2 {
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.feedback-center p {
+    margin-left: 50px;
+}
+
+.feedback-right {
+    width: 33%;
+    height: 100%;
+}
+
+.feedback-right img {
+    width: 100%;
+}
+
+.dots {
+    margin-left: 50px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(71, 71, 205, 0.456);
+}
+
+.active {
+    background-color: rgba(71, 71, 205);
+}
+
+.subscribe {
+    width: 90%;
+    height: 400px;
+    padding: 50px 0;
+    margin: 0 auto;
+    background: url("./assets/Group\ 78.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    background-color: #f4f9ff;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.form-text {
+    padding: 30px 100px;
+}
+
+.form-input {
+    background-color: #2639ed;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    border-top-left-radius: 130px;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.form-input input {
+    background-color: white;
+    border: none;
+    position: absolute;
+    border-radius: 50px;
+    padding: 20px;
+    width: 350px;
+    top: 70px;
+    left: -30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.189);
+}
+
+.form-input button {
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    top: 75px;
+    left: 250px;
+    background-color: #2639ed;
+}
+
+.footer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-top: 0.5px solid grey;
+    border-bottom: 0.5px solid grey;
 }
